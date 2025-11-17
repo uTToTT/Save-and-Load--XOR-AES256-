@@ -14,7 +14,7 @@ public class XORCipher : ICipherProvider
         var r = s;
         while (r.Length < n)
         {
-            r += r;
+            r += r; // ref to stringbuilder
         }
 
         return r.Substring(0, n);
